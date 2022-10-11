@@ -46,7 +46,7 @@ class AppointmentAndAvailabilityDetail(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-class AppointmentAndAvailabilityCustom(APIView):
+'''class AppointmentAndAvailabilityCustom(APIView):
     def get_objects(self,filter_param):
         try:
             return AppointmentAndAvailability.objects.filter(is_booked=filter_param)
@@ -56,7 +56,7 @@ class AppointmentAndAvailabilityCustom(APIView):
     def get(self,request):
         appoinments=self.get_objects("False")
         serializer=AppointmentAndAvailabilitySerializer(appoinments,many=True)
-        return Response(serializer.data)
+        return Response(serializer.data)'''
 
 
 

@@ -39,7 +39,7 @@ urlpatterns = [
     path('api/auth/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('appoinments/',views.AppointmentAndAvailabilityList.as_view()),
-    path('appoinments/custom',views.AppointmentAndAvailabilityCustom.as_view()),
+    '''path('appoinments/custom',views.AppointmentAndAvailabilityCustom.as_view()),'''
     path('appoinments/<int:pk>',views.AppointmentAndAvailabilityDetail.as_view()),
 ]
 
